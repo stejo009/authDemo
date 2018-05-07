@@ -1,0 +1,28 @@
+<div class="continer">
+  <div class="row">
+
+    <div class="col-md-3 offset-4">
+        <input type="text" placeholder="username"  [(ngModel)]="uname" class="login" required>
+        <input type="password" placeholder="password" [(ngModel)]="upass" class="login" required><br>
+        <button class="btn btn-primary login" (click)="onLigin()">Login</button>
+        <button class="btn btn-primaryb login" >Register</button>
+    </div>
+
+    <div class="col-md-6 offset-3"><br>
+        <table class="table">
+        <thead>
+          <tr>
+            <th>Username</th>
+            <th>Password</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let users of logindata">
+            <td>{{users.username}}</td>
+            <td>{{users.password}}</td>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</div>
