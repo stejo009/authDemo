@@ -39,8 +39,8 @@ username;password;
         }
       );
       console.log("submit button clicked");
+
       
-      this.ngOnInit(); 
 
   }
 

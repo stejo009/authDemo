@@ -9,7 +9,6 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { SignupComponent } from './signup/signup.component';
 import { SiginComponent } from './sigin/sigin.component';
 import { ServerloginService } from './serverlogin.service';
-import { ServerstateTableService } from './serverstate-table.service';
 
 
 @NgModule({
@@ -25,7 +24,7 @@ import { ServerstateTableService } from './serverstate-table.service';
     HttpClientModule,
     FormsModule
   ],
-  providers: [ServerloginService, ServerstateTableService],
+  providers: [ServerloginService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
