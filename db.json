@@ -42,16 +42,21 @@
       "username": "asdf",
       "password": "asdfadfsafs",
       "id": 9
-    }
-  ],
-  "users": [
-    {
-      "username": "pramod",
-      "password": "pramod123"
     },
     {
-      "username": "Sagar",
-      "password": "sagar123"
+      "username": "pramod",
+      "password": "pramod123",
+      "id": 10
+    },
+    {
+      "username": "adf",
+      "password": "adf",
+      "id": 11
+    },
+    {
+      "username": "asdfa",
+      "password": "adsf",
+      "id": 12
     }
   ]
 }
