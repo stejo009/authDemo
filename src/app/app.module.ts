@@ -9,6 +9,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { SignupComponent } from './signup/signup.component';
 import { SiginComponent } from './sigin/sigin.component';
 import { ServerloginService } from './serverlogin.service';
+import { HttpModule } from '@angular/http'
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { ServerloginService } from './serverlogin.service';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    HttpModule,
     FormsModule
   ],
   providers: [ServerloginService],
