@@ -34,7 +34,7 @@ export class AppComponent {
     let options = new RequestOptions({headers: headers});
     
 
-      this.http.get("http://phplaravel-68825-317593.cloudwaysapps.com/testApi", options)
+      this.http.get("http://phplaravel-68825-317593.cloudwaysapps.com/get_orders")
       .subscribe(data=>{
       console.log("test" + data);
         // this.data = data.json();
@@ -51,5 +51,3 @@ export class AppComponent {
 
 }
 
-
-// 
