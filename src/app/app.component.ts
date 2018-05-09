@@ -24,16 +24,23 @@ export class AppComponent {
   getdata(){
 
     let headers = new Headers();
-    headers.append('Content-Type', 'application/json');
-    headers.append('Access-Control-Allow-Origin',"*");
+        headers.append('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+        headers.append('Access-Control-Allow-Headers', 'session-variable');
+        headers.append('Access-Control-Allow-Methods', 'POST, OPTIONS');
+        headers.append('Access-Control-Allow-Origin', 'http://gh.nhamoigioi.xyz');
+        headers.append('Access-Control-Allow-Credentials', 'true');
+
     
     let options = new RequestOptions({headers: headers});
+    
 
-      this.http.get("https://jsonplaceholder.typicode.com/posts/1", options )
+      this.http.get("http://phplaravel-68825-317593.cloudwaysapps.com/testApi", options)
       .subscribe(data=>{
       console.log("test" + data);
-        this.data = data.json();
-        console.log("title :"+this.data.title);
+        // this.data = data.json();
+        console.log("title 1:"+this.data[0]);
+        console.log("title 2:"+this.data[2]);
+        console.log("title 3:"+this.data[2]); 
     }, err=>{
       console.error("Error = " + err);
     }, ()=>{
@@ -43,4 +50,6 @@ export class AppComponent {
 }
 
 }
-1
+
+
+// 
